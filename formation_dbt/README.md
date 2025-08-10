@@ -93,7 +93,7 @@ Réaliser des requêtes exploratoires sur les fichiers Parquet afin de :
     - conversion et typage des colonnes (ex. passenger_count en entier)
     - traduction des codes de paiement en valeurs lisibles ("Credit card", "Cash")
  4. Restriction temporelle aux trajets de l’année 2024 uniquement.
- 5. Production du fichier Parquet final nettoyé et prêt pour les analyses.
+ 5. Production du fichier Parquet final nettoyé et prêt pour les tests unitaires.
 
 ---
 
