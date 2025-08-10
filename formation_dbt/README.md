@@ -35,7 +35,9 @@ Réaliser des requêtes exploratoires sur les fichiers Parquet afin de :
 
 **Description :**
 
->**Vérifier la qualité des données** : détection d’incohérences (dates inversées, distances négatives, montants nuls ou négatifs).
+>**Vérifier la qualité des données** : 
+
+>détection d’incohérences (distances négatives, montants nuls ou négatifs).
 
 >Identifier les valeurs manquantes ou atypiques.
 
