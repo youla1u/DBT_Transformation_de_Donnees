@@ -81,7 +81,19 @@ Réaliser des requêtes exploratoires sur les fichiers Parquet afin de :
 
 **Objectif :** créer des modèles SQL pour nettoyer, enrichir et préparer les données pour l’analyse finale.
 
-> (Expliquer les transformations appliquées — filtres, jointures, calculs, agrégations, etc.)
+**Étapes principales :**
+ 1. Chargement des données brutes depuis la source dbt "row_yellow_tripdata".
+ 2. Application de filtres pour exclure :
+    - trajets sans passager ou avec valeurs incohérentes
+    - montants, distances ou durées non valides
+    - trajets avec codes de paiement hors carte/cash
+    - trajets stockés avant transmission (store_and_fwd_flag = 'Y')
+ 3. Transformations :
+    - calcul de la durée de trajet en minutes
+    - conversion et typage des colonnes (ex. passenger_count en entier)
+    - traduction des codes de paiement en valeurs lisibles ("Credit card", "Cash")
+ 4. Restriction temporelle aux trajets de l’année 2024 uniquement.
+ 5. Production du fichier Parquet final nettoyé et prêt pour les analyses.
 
 ---
 
