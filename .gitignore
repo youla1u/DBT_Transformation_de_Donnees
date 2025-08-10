@@ -1,0 +1,2 @@
+formation_dbt/output/*.db
+formation_dbt/output/*.parquet
