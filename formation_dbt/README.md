@@ -121,6 +121,27 @@ Ces tests sont déclaratifs, basés sur des règles standards ou personnalisées
 >Vérifie que les valeurs sont du type spécifié.
 >Exemple : passenger_count est de type BIGINT.
 
+
+**Tests définis dans des fichiers SQL**
+>Ces tests sont basés sur des requêtes personnalisées exécutées sur le modèle transform pour vérifier des contraintes métier ou détecter des anomalies.
+
+>**Test de couverture des 12 mois**
+>Vérifie que les données contiennent bien des trajets pour les 12 mois de l’année 2024.
+>Fichier SQL
+>Logique : Extraction des mois distincts, puis échec si le nombre de mois ≠ 12.
+
+>**Test sur passenger_count invalide**
+>Recherche les enregistrements où passenger_count est ≤ 0 ou non entier.
+>Fichier SQL
+
+>**Test sur trip_distance invalide**
+>Recherche les trajets avec une distance ≤ 0.
+>Fichier SQL
+
+>**Test sur trip_duration_minutes invalide**
+>Recherche les trajets avec une durée ≤ 0 minutes.
+>Fichier SQL
+
 ---
 
 ## 7️⃣ Sauvegarde des données transformées
