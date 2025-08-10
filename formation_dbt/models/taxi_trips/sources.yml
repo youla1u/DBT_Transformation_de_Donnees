@@ -1,3 +1,7 @@
+#---------------------------------------------------------------------------------------------------
+#                              Si les données ne sont éléchargé en local
+#---------------------------------------------------------------------------------------------------
+
 # version: 2
 
 # sources:
@@ -13,8 +17,17 @@
 #     tables:
 #       - name: row_yellow_tripdata
 
-#______________________________________________________________________________________________
+# Résumé :
+# Ce fichier source dbt lit 12 fichiers Parquet (un par mois de 2024) situés dans https://d37ci6vzurychx.cloudfront.net/trip-data,
+# les combine en un seul dataset via DuckDB et les expose sous le nom row_yellow_tripdata.
 
+
+
+
+#                                      SINON 
+#---------------------------------------------------------------------------------------------------
+#                              Si les données téléchargé en local
+#---------------------------------------------------------------------------------------------------
 version: 2
 
 sources:
