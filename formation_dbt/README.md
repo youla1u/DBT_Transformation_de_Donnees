@@ -8,6 +8,14 @@ Ce projet illustre un workflow complet de transformation de données avec **dbt*
 
 **Objectif :** comprendre la structure, le format et les sources des données brutes avant toute transformation.
 
+> (Décrire ici la provenance des données, leur format — CSV, Parquet, etc. — et un résumé des colonnes principales.)
+
+---
+
+## 2️⃣ Extraction des données avec SQL dans DuckDB
+
+**Objectif :** importer les données brutes dans DuckDB pour permettre les premières manipulations et vérifications.
+
 **Description :**
 Ce fichier source dbt définit l’emplacement des fichiers Parquet contenant les données brutes des trajets en taxi jaune pour l’année 2024.
 Il prend en charge deux cas :
@@ -17,14 +25,6 @@ Il prend en charge deux cas :
 >**Données locales :** Les fichiers sont stockés localement dans le dossier ./output/data/.
 
 Dans les deux cas, les 12 fichiers mensuels sont combinés en un seul dataset via la fonction read_parquet et list_transform de DuckDB, exposé sous le nom row_yellow_tripdata.
-
----
-
-## 2️⃣ Extraction des données avec SQL dans DuckDB
-
-**Objectif :** importer les données brutes dans DuckDB pour permettre les premières manipulations et vérifications.
-
-> (Expliquer ici comment les fichiers sont lus, par exemple via `read_parquet()` ou `read_csv_auto()`.)
 
 ---
 
