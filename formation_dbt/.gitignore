@@ -1,6 +1,0 @@
-
-target/
-dbt_packages/
-logs/
-formation_dbt/output/transformed_data.db
-formation_dbt/output/trips_2024_transformed.parquet
