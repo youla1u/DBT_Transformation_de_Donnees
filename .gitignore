@@ -1,2 +1,36 @@
-formation_dbt/output/*.db
-formation_dbt/output/*.parquet
+# --- Fichiers et dossiers spécifiques à dbt ---
+target/
+dbt_packages/
+logs/
+
+# --- Bases de données locales ---
+*.db
+*.duckdb
+*.sqlite
+
+# --- Données exportées ou transformées ---
+output/
+formation_dbt/output/
+*.parquet
+
+
+# --- Fichiers temporaires ---
+*.tmp
+*.temp
+*.log
+
+# --- Environnements virtuels Python ---
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.pyc
+*.pyo
+
+# --- OS : Windows / macOS ---
+# Fichiers cachés générés par le système
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
