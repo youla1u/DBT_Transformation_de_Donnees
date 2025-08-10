@@ -8,7 +8,15 @@ Ce projet illustre un workflow complet de transformation de données avec **dbt*
 
 **Objectif :** comprendre la structure, le format et les sources des données brutes avant toute transformation.
 
-> (Décrire ici la provenance des données, leur format — CSV, Parquet, etc. — et un résumé des colonnes principales.)
+**Description :**
+Ce fichier source dbt définit l’emplacement des fichiers Parquet contenant les données brutes des trajets en taxi jaune pour l’année 2024.
+Il prend en charge deux cas :
+
+**-Données distantes** : Les fichiers sont directement lus depuis une URL publique (Cloudfront).
+
+**-Données locales :** Les fichiers sont stockés localement dans le dossier ./output/data/.
+
+Dans les deux cas, les 12 fichiers mensuels sont combinés en un seul dataset via la fonction read_parquet et list_transform de DuckDB, exposé sous le nom row_yellow_tripdata.
 
 ---
 
