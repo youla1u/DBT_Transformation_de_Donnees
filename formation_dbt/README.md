@@ -30,9 +30,40 @@ Dans les deux cas, les 12 fichiers mensuels sont combinés en un seul dataset vi
 
 ## 3️⃣ Analyse de données via un script SQL
 
-**Objectif :** réaliser des requêtes exploratoires pour détecter incohérences, valeurs manquantes ou tendances.
+**Objectif :**
+Réaliser des requêtes exploratoires sur les fichiers Parquet afin de :
 
-> (Indiquer ici les analyses initiales réalisées — statistiques simples, vérifications de distributions, etc.)
+**Description :**
+
+>**Vérifier la qualité des données** : détection d’incohérences (dates inversées, distances négatives, montants nuls ou négatifs).
+
+>Identifier les valeurs manquantes ou atypiques.
+
+>Obtenir un aperçu des distributions (répartition par vendeur, code tarifaire, type de paiement, zones de départ et d’arrivée).
+
+>Mesurer l’ampleur des anomalies afin de décider d’actions correctives dans les étapes de transformation.
+
+
+>**Analyses initiales réalisées :**
+
+>Statistiques descriptives
+
+>Comptage du nombre total de trajets par mois.
+
+>Comptage par catégories (VendorID, RatecodeID, payment_type, zones de départ/arrivée).
+
+>Contrôles de cohérence
+
+>Détection de trajets avec heure de départ postérieure à l’heure d’arrivée.
+
+>Détection de trajets avec distance nulle ou négative.
+
+>Détection de trajets avec montant total nul ou négatif.
+
+>Aperçu des données
+
+>Extraction des premières lignes pour vérifier la structure et les types de colonnes.
+
 
 ---
 
