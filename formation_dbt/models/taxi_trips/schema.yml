@@ -5,27 +5,27 @@ models:
     description: "Dataset des trajets en taxi jaune de New York au cours de l'année 2024."
     columns:
       - name: tpep_pickup_datetime
-        description: "The date and time when the meter was engaged."
+        description: "La date et l'heure auxquelles le compteur a été activé."
         tests:
           - not_null
 
       - name: tpep_dropoff_datetime
-        description: "The date and time when the meter was disengaged."
+        description: "La date et l'heure auxquelles le compteur a été désactivé."
         tests:
           - not_null
 
       - name: trip_duration_minutes
-        description: "The duration of the trip in minutes."
+        description: "La durée du trajet en minutes."
         tests:
           - not_null
 
       - name: trip_distance
-        description: "The trip distance in miles."
+        description: "La distance du trajet en miles."
         tests:
           - not_null
 
       - name: passenger_count
-        description: "The number of passengers in the vehicle."
+        description: "Le nombre de passagers dans le véhicule."
         tests:
           - not_null
           - dbt_expectations.expect_column_values_to_be_between:
@@ -34,69 +34,70 @@ models:
               column_type: BIGINT
 
       - name: payment_method
-        description: "Translated payment method."
+        description: "Méthode de paiement traduite."
         tests:
           - not_null
           - accepted_values:
               values: ["Credit card", "Cash"]
 
       - name: store_and_fwd_flag
-        description: "Indicates whether the trip record was stored in vehicle memory."
+        description: "Indique si l’enregistrement du trajet a été stocké en mémoire du véhicule."
         tests:
           - not_null
           - accepted_values:
               values: ["N"]
+
       - name: PULocationID
-        description: "The taxi zone where the trip started."
+        description: "La zone taxi où le trajet a commencé."
         tests:
           - not_null
 
       - name: DOLocationID
-        description: "The taxi zone where the trip ended."
+        description: "La zone taxi où le trajet s’est terminé."
         tests:
           - not_null
 
       - name: fare_amount
-        description: "The time-and-distance fare calculated by the meter."
+        description: "Le tarif temps-distance calculé par le compteur."
         tests:
           - not_null
 
       - name: total_amount
-        description: "The total amount charged to the passenger."
+        description: "Le montant total facturé au passager."
         tests:
           - not_null
 
       - name: tip_amount
-        description: "The tip amount."
+        description: "Le montant du pourboire."
         tests:
           - not_null
 
       - name: tolls_amount
-        description: "The amount of tolls paid in trip."
+        description: "Le montant des péages payés pendant le trajet."
         tests:
           - not_null
 
       - name: improvement_surcharge
-        description: "The improvement surcharge paid in trip."
+        description: "La surcharge d’amélioration payée pendant le trajet."
         tests:
           - not_null
 
       - name: congestion_surcharge
-        description: "The congestion surcharge paid in trip."
+        description: "La surcharge de congestion payée pendant le trajet."
         tests:
           - not_null
 
       - name: extra
-        description: "The extra paid in trip."
+        description: "Les frais supplémentaires payés pendant le trajet."
         tests:
           - not_null  
 
       - name: mta_tax
-        description: "The MTA paid in trip."
+        description: "La taxe MTA payée pendant le trajet."
         tests:
           - not_null 
 
       - name: Airport_fee
-        description: "The airport fee paid in trip."
+        description: "Les frais d’aéroport payés pendant le trajet."
         tests:
-          - not_null         
+          - not_null  
