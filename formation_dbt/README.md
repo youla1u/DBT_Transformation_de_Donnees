@@ -101,7 +101,25 @@ Réaliser des requêtes exploratoires sur les fichiers Parquet afin de :
 
 **Objectif :** s’assurer de la qualité des données grâce aux tests dbt (`unique`, `not_null`, `accepted_values`, etc.).
   
-> (Lister les tests utilisés et ce qu’ils vérifient.)
+**Tests définis dans schema.yml**
+Ces tests sont déclaratifs, basés sur des règles standards ou personnalisées, appliqués aux colonnes du modèle transform.
+
+>**not_null**
+>Vérifie que la colonne ne contient aucune valeur NULL.
+>Exemple : tpep_pickup_datetime, tpep_dropoff_datetime, trip_duration_minutes, etc.
+
+>**accepted_values**
+>Vérifie que les valeurs d’une colonne sont dans une liste définie.
+>Exemple : payment_method doit être "Credit card" ou "Cash".
+>Exemple : store_and_fwd_flag doit être "N".
+
+>**dbt_expectations.expect_column_values_to_be_between**
+>Vérifie que les valeurs numériques sont dans un intervalle donné.
+>Exemple : passenger_count doit être au moins 1.
+
+>**dbt_expectations.expect_column_values_to_be_of_type**
+>Vérifie que les valeurs sont du type spécifié.
+>Exemple : passenger_count est de type BIGINT.
 
 ---
 
