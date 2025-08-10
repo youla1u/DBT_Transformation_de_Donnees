@@ -1,0 +1,37 @@
+# version: 2
+
+# sources:
+#   - name: tlc_texi_trps
+#     meta:
+#       external_location: |
+#         (FROM read_parquet(
+#           list_transform(
+#             range(1, 13), 
+#             m -> 'https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-' || lpad(m::text, 2, '0') || '.parquet'
+#           )
+#         ))
+#     tables:
+#       - name: row_yellow_tripdata
+
+#______________________________________________________________________________________________
+
+version: 2
+
+sources:
+  - name: tlc_texi_trps
+
+    meta:
+      external_location: |
+        (FROM read_parquet(
+          list_transform(
+            range(1, 13), 
+            m -> './output/data/yellow_tripdata_2024-' || lpad(m::text, 2, '0') || '.parquet'
+          )
+        ))
+
+    tables:
+      - name: row_yellow_tripdata
+
+# Résumé :
+# Ce fichier source dbt lit 12 fichiers Parquet (un par mois de 2024) situés dans ./output/data/,
+# les combine en un seul dataset via DuckDB et les expose sous le nom row_yellow_tripdata.
