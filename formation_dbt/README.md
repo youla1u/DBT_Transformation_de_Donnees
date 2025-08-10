@@ -20,9 +20,9 @@ Ce projet illustre un workflow complet de transformation de données avec **dbt*
 Ce fichier source dbt définit l’emplacement des fichiers Parquet contenant les données brutes des trajets en taxi jaune pour l’année 2024.
 Il prend en charge deux cas :
 
->**Données distantes** : Les fichiers sont directement lus depuis une URL publique.
+>**Données distantes** : Les fichiers sont directement lus depuis une URL publique
 
->**Données locales :** Les fichiers sont stockés localement dans le dossier ./output/data/.
+>**Données locales :** Les fichiers sont stockés localement dans le dossier ./output/data/
 
 Dans les deux cas, les 12 fichiers mensuels sont combinés en un seul dataset via la fonction read_parquet et list_transform de DuckDB, exposé sous le nom row_yellow_tripdata.
 
