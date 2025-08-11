@@ -100,7 +100,7 @@ Réaliser des requêtes exploratoires sur les données afin de procéder aux tra
 **Tests définis dans schema.yml**
 Ces tests sont déclaratifs, basés sur des règles standards ou personnalisées, appliqués aux colonnes du modèle transform.
 
->**not_null**
+>**not_null:**
 >Vérifie que la colonne ne contient aucune valeur NULL.
 >Exemple : tpep_pickup_datetime, tpep_dropoff_datetime, trip_duration_minutes, etc.
 
