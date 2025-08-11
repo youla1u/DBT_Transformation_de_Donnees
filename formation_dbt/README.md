@@ -97,7 +97,7 @@ Réaliser des requêtes exploratoires sur les données afin de procéder aux tra
 
 **Objectif :** s’assurer de la qualité des données grâce aux tests dbt (`unique`, `not_null`, `accepted_values`, etc.).
   
-**Tests définis dans schema.yml**
+**Tests définis dans schema.yml:**
 Ces tests sont déclaratifs, basés sur des règles standards ou personnalisées, appliqués aux colonnes du modèle transform.
 
 >**not_null:**
@@ -119,7 +119,7 @@ Ces tests sont déclaratifs, basés sur des règles standards ou personnalisées
 
 
 **Tests définis dans des fichiers SQL:**
->Ces tests sont basés sur des requêtes personnalisées exécutées sur le modèle transform pour vérifier des contraintes métier ou détecter des anomalies.
+Ces tests sont basés sur des requêtes personnalisées exécutées sur le modèle transform pour vérifier des contraintes métier ou détecter des anomalies.
 
 >**Test de couverture des 12 mois:**
 >Vérifie que les données contiennent bien des trajets pour les 12 mois de l’année 2024.
