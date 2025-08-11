@@ -151,11 +151,11 @@ Pour sauvegarder les données transformées, on exécute la commande **dbt run**
 
 ## 🚀 Commandes principales
 
-**Installation de l’environnement**
+**Installation de l’environnement de travail**
 
 1) Creer un repertoire **Projet_DBT/pratique-dbt**
 
-2) Sous Visual Studio ouvrir un terminal, puis se plaser dans **pratique-dbt** 
+2) Sous Visual Studio ouvrir un terminal, puis se plasser dans **pratique-dbt** 
 
 3) Exécuter les commandes suivantes:
 ```bash
@@ -173,6 +173,7 @@ dbt init formation_dbt
 
 # Pour finir, choisir un base de donnée : taper 1 pour choisir la base de donnée proposée, soit duckdb
 ```
+>Pour les prochaines connexions, reactiver l'evironnement depuis le terminel et dans le dossier pratique-dbt.
 
 **Commande dbt**
 ```bash
