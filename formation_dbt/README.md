@@ -6,9 +6,9 @@ Ce projet illustre un workflow complet de transformation de données avec **dbt*
 
 ## 1️⃣ Présentation des données
 
-**Objectif :** comprendre la structure, le format et les sources des données brutes avant toute transformation.
-
-> (Décrire ici la provenance des données, leur format — CSV, Parquet, etc. — et un résumé des colonnes principales.)
+J'utilise les données TLC de 2014 sur les courses de taxis jaunes, verts et VTC, disponibles à l’adresse : https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page.
+Ces données, collectées par des fournisseurs agréés, incluent horaires, lieux, distances, tarifs, modes de paiement et passagers déclarés, avec contrôles réguliers de la TLC pour en améliorer la fiabilité.
+La description détaillée de ces colonnes se trouve dans https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf
 
 ---
 
