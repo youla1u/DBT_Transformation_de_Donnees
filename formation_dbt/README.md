@@ -23,7 +23,9 @@ Il prend en charge deux cas :
 
 >**Données distantes** : Les fichiers sont directement lus depuis une URL publique
 
->**Données locales :** Les fichiers sont stockés localement dans le dossier ./output/data/
+>**Données locales :** Les fichiers sont stockés localement dans le dossier ./output/data/                                                                                 
+
+>Selon le contexte, les fichiers de données peuvent être lus depuis l’URL du site TLC ou depuis un répertoire local (./output/data/). Ici, le répertoire local est choisi, car l’accès au serveur distant via l’URL est limité et interroger directement celui-ci peut provoquer des erreurs 403.
 
 Dans les deux cas, les 12 fichiers mensuels sont combinés en un seul dataset via la fonction read_parquet et list_transform de DuckDB, exposé sous le nom **row_yellow_tripdata**.
 
