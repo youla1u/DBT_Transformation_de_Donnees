@@ -162,7 +162,6 @@ dbt run
 dbt test
 
 # Pour lancer les tests unitaires écrits dans des fichiers SQL, dbt test --select nom_du_fichier_de_test Exemple: 
-
 dbt test --select test_distinct_months 
 
 ```
