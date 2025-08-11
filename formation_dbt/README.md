@@ -164,5 +164,4 @@ dbt test --select test_distinct_months
 
 ```
 **Pour explorer directement les donner dans DuckDB**
-> Taper **duckdb**
-> Pui ecrir une requête SQL d'exploration de donneées
+> Taper **duckdb**, puis écrire une requête SQL d’exploration de données.
