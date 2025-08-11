@@ -171,7 +171,7 @@ pip install db-duckdb dbt
 # Initialiser un projet dbt 
 dbt init formation_dbt
 
-# Pour finir, choisir un base de donnée : taper 1 pour choisir la base de donnée proposée, soit duckdb
+# Pour finir, choisir une base de données : taper 1 pour sélectionner la base de données proposée, ici duckdb.
 ```
 >Pour les prochaines connexions, reactiver l'evironnement depuis le terminal et dans le dossier pratique-dbt.
 
