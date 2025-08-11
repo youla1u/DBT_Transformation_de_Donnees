@@ -18,14 +18,14 @@ La description détaillée de ces colonnes se trouve dans https://www.nyc.gov/as
 **Objectif :** importer les données brutes dans DuckDB pour permettre les premières manipulations et vérifications.
 
 **Description :**
-Ce fichier source dbt définit l’emplacement des fichiers Parquet contenant les données brutes des trajets en taxi jaune pour l’année 2024.
+Le fichier **sources.yml** dans **models/taxi_trips/** définit l’emplacement des fichiers Parquet contenant les données brutes des trajets en taxi jaune pour l’année 2024.
 Il prend en charge deux cas :
 
 >**Données distantes** : Les fichiers sont directement lus depuis une URL publique
 
 >**Données locales :** Les fichiers sont stockés localement dans le dossier ./output/data/
 
-Dans les deux cas, les 12 fichiers mensuels sont combinés en un seul dataset via la fonction read_parquet et list_transform de DuckDB, exposé sous le nom row_yellow_tripdata.
+Dans les deux cas, les 12 fichiers mensuels sont combinés en un seul dataset via la fonction read_parquet et list_transform de DuckDB, exposé sous le nom **row_yellow_tripdata**.
 
 ---
 
