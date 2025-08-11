@@ -158,5 +158,5 @@ dbt run
 # Pour lancer les tests unitaires
 dbt test
 
-dbt test --select nom_du_fichier_de_test (Exemple: test --select distinct_months) 
+dbt test --select nom_du_fichier_de_test (Exemple: dbt test --select test_distinct_months) 
 
