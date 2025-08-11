@@ -138,7 +138,7 @@ Ces tests sont basés sur des requêtes personnalisées exécutées sur le modè
 >Recherche les trajets avec une durée ≤ 0 minutes.
 >Fichier SQL
 
->**RÉSULTAT DU TEST:** Aucune erreur n’a été détectée. On peut donc sauvegarder les données transformées.
+**RÉSULTAT DU TEST:** Aucune erreur n’a été détectée. On peut donc sauvegarder les données transformées.
 ---
 
 ## 6️⃣ Sauvegarde des données transformées
