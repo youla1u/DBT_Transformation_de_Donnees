@@ -170,3 +170,7 @@ dbt test --select test_distinct_months
 >Taper **duckdb**, puis exécuter **.read 'repertoire/fichier_analyse.sql**.
 
 >Cette seconde méthode permet de sauvegarder les analyses à effectuer afin de les reprendre ultérieurement ou de les transmettre à un collègue.
+
+>Exemple: **.read './analyses/analyse_exploratiore.sql'**
+
+**.exit** pour quitter DuckDB 
