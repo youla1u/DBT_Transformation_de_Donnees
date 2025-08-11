@@ -74,9 +74,9 @@ Réaliser des requêtes exploratoires sur les fichiers Parquet afin de :
 
 Ce fichier définit dans dbt une source nommée tlc_texi_trps, qui lit 12 fichiers Parquet (un par mois) contenant les données de trajets de taxis jaunes.
 
-Selon le contexte, les données peuvent être lus depuis l’URL du site TLC ou depuis un répertoire local (./output/data/). Ici, le répertoire local est choisi, car l’accès au serveur distant via l’URL est limité et interroger directement celui-ci peut provoquer des erreurs 403.
+Selon le contexte, les fichiers de données peuvent être lus depuis l’URL du site TLC ou depuis un répertoire local (./output/data/). Ici, le répertoire local est choisi, car l’accès au serveur distant via l’URL est limité et interroger directement celui-ci peut provoquer des erreurs 403.
 
-Grâce à DuckDB, ces fichiers sont combinés en un seul jeu de données accessible dans dbt sous le nom row_yellow_tripdata, servant de table brute pour les transformations ultérieures.
+Grâce à DuckDB, ces fichiers de données sont combinés en un seul jeu de données accessible dans dbt sous le nom row_yellow_tripdata, servant de table brute pour les transformations ultérieures.
 
 ---
 
