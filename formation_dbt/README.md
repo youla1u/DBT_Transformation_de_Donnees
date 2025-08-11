@@ -139,7 +139,7 @@ Ces tests sont basés sur des requêtes personnalisées exécutées sur le modè
 >Fichier SQL
 
 **RÉSULTAT DU TEST:** 
-Aucune erreur n’a été détectée. On peut donc sauvegarder les données transformées.
+>Aucune erreur n’a été détectée. On peut donc sauvegarder les données transformées.
 ---
 
 ## 6️⃣ Sauvegarde des données transformées
