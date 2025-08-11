@@ -152,6 +152,9 @@ Pour sauvegarder les données transformées, on exécute la commande **dbt run**
 ## 🚀 Commandes principales dbt
 
 ```bash
+# Nombre de lignes avant les transformations
+dbt run-operation count_source_rows
+
 # Pour exécuter toutes les transformations
 dbt run
 
