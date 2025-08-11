@@ -11,6 +11,8 @@ J'utilise les données TLC de 2014 sur les courses de taxis jaunes, verts et VTC
 Ces données, collectées par des fournisseurs agréés, incluent horaires, lieux, distances, tarifs, modes de paiement et passagers déclarés, avec contrôles réguliers de la TLC pour en améliorer la fiabilité.
 La description détaillée de ces colonnes se trouve dans https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf
 
+Les fichiers de données sont au format .parquet, un format de stockage colonnaire optimisé pour le traitement de gros volumes de données. Il permet une compression efficace, une lecture rapide des colonnes nécessaires et une meilleure performance pour les analyses sur de grands ensembles de données.
+
 ---
 
 ## 2️⃣ Extraction des données avec SQL dans DuckDB
@@ -34,7 +36,7 @@ Dans les deux cas, les 12 fichiers mensuels sont combinés en un seul dataset vi
 ## 3️⃣ Analyse de données via un script SQL
 
 **Objectif :**
-Réaliser des requêtes exploratoires sur les fichiers Parquet afin de procéder aux transformations:
+Réaliser des requêtes exploratoires sur les données afin de procéder aux transformations:
 
 **Description :**
 
