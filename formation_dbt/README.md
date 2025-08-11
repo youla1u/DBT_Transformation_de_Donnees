@@ -173,7 +173,7 @@ dbt init formation_dbt
 
 # Pour finir, choisir un base de donnée : taper 1 pour choisir la base de donnée proposée, soit duckdb
 ```
->Pour les prochaines connexions, reactiver l'evironnement depuis le terminel et dans le dossier pratique-dbt.
+>Pour les prochaines connexions, reactiver l'evironnement depuis le terminal et dans le dossier pratique-dbt.
 
 **Commande dbt**
 ```bash
