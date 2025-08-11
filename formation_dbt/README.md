@@ -8,7 +8,8 @@ Ce projet illustre un workflow complet de transformation de données avec **dbt*
 
 J'utilise les données TLC de 2014 sur les courses de taxis jaunes, verts et VTC, disponibles à l’adresse : https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page.
 
-Ces données, collectées par des fournisseurs agréés, incluent horaires, lieux, distances, tarifs, modes de paiement et passagers déclarés, avec contrôles réguliers de la TLC pour en améliorer la fiabilité. La description détaillée de ces colonnes se trouve dans https://www.nyc.gov/assets/tlc/downloads/pdf data_dictionary_trip_records_yellow.pdf
+Ces données, collectées par des fournisseurs agréés, incluent horaires, lieux, distances, tarifs, modes de paiement et passagers déclarés, avec contrôles réguliers de la TLC pour en améliorer la fiabilité.
+La description détaillée de ces colonnes se trouve dans https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf
 
 ---
 
