@@ -166,7 +166,7 @@ dbt test --select test_distinct_months
 **Pour explorer directement les donner dans DuckDB**
 > Taper **duckdb**, puis écrire une requête SQL d’exploration de données.
 
-**Pour explorer directement les donner dans DuckDB via un fichier_analyse.sql**
+**Pour explorer les donner dans DuckDB via un fichier_analyse.sql**
 >Taper **duckdb**, puis exécuter **.read 'repertoire/fichier_analyse.sql**.
 
->Cette seconde methode permet de sauvegarder les analyse à effectuer 
+>Cette seconde méthode permet de sauvegarder les analyses à effectuer afin de les reprendre ultérieurement ou de les transmettre à un collègue.
