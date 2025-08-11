@@ -1,6 +1,6 @@
 # 📊 DBT POUR LA TRANSFORMATION DE DONNÉES 
 
-Ce projet illustre un workflow complet de transformation de données avec **dbt** en utilisant **DuckDB** comme moteur SQL.
+Ce projet illustre un workflow de transformation de données avec **dbt** en utilisant **DuckDB** comme moteur SQL.
 
 ---
 
@@ -149,9 +149,7 @@ Ces tests sont déclaratifs, basés sur des règles standards ou personnalisées
 
 ## 7️⃣ Sauvegarde des données transformées
 
-**Objectif :** exporter les résultats transformés vers un format ou un emplacement prêt pour la consommation (CSV, Parquet, base SQL, etc.).
-  
-> (Préciser ici le format de sortie et l’endroit où les données sont sauvegardées.)
+Pour sauvegarder les données transformées, on exécute la commande **dbt run**, qui va non seulement enregistrer ces données dans la table **output/transformed_data.db** de la base de données, mais aussi dans le fichier **output/trip_2024_transformed.parquet**.
 
 ---
 
