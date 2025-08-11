@@ -149,8 +149,32 @@ Pour sauvegarder les données transformées, on exécute la commande **dbt run**
 
 ---
 
-## 🚀 Commandes principales dbt
+## 🚀 Commandes principales
 
+**Installation de l’environnement**
+
+1) Creer un repertoire **Projet_DBT/pratique-dbt**
+
+2) Sous Visual Studio ouvrir un terminal, puis se plaser dans **pratique-dbt** 
+
+3) Exécuter les commandes suivantes:
+```bash
+# Creer un environemennt virtuel.
+python -m venv .venv
+
+# Activer l'environemennt virtuel.
+.\.venv\Scripts\activate
+
+# Installer DuckDB et dbt 
+pip install db-duckdb dbt
+
+# Initialiser un projet dbt 
+dbt init formation_dbt
+
+# Pour finir, choisir un base de donnée : taper 1 pour choisir la base de donnée proposée, soit duckdb
+```
+
+**Commande dbt**
 ```bash
 # Nombre de lignes avant les transformations, affiché directement dans la console.
 dbt run-operation count_source_rows
