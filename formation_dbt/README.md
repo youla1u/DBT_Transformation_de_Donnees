@@ -155,8 +155,14 @@ Pour sauvegarder les données transformées, on exécute la commande **dbt run**
 # Pour exécuter toutes les transformations
 dbt run
 
-# Pour lancer les tests unitaires
+# Pour lancer les tests unitaires écrits dans schema.yml
 dbt test
 
-dbt test --select nom_du_fichier_de_test (Exemple: dbt test --select test_distinct_months) 
+# Pour lancer les tests unitaires écrits dans des fichiers SQL, dbt test --select nom_du_fichier_de_test Exemple: 
 
+dbt test --select test_distinct_months 
+
+```
+**Pour explorer directement les donner dans DuckDB**
+> Taper **duckdb**
+> Pui ecrir une requête SQL d'exploration de donneées
