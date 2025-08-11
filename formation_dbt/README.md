@@ -33,7 +33,7 @@ Dans les deux cas, les 12 fichiers mensuels sont combinés en un seul dataset vi
 
 ---
 
-## 3️⃣ Analyse exploratoire de données via un script SQLL
+## 3️⃣ Analyse exploratoire de données via un script SQL
 
 **Objectif :**
 Réaliser des requêtes exploratoires sur les données avant de procéder aux transformations:
