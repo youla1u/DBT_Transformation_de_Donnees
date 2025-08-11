@@ -145,7 +145,7 @@ Ces tests sont basés sur des requêtes personnalisées exécutées sur le modè
 
 ## 6️⃣ Sauvegarde des données transformées
 
-Pour sauvegarder les données transformées, on exécute la commande **dbt run**, qui va non seulement enregistrer ces données dans la table **output/transformed_data.db** de la base de données, mais aussi dans le fichier **output/trip_2024_transformed.parquet**. Ce fichier contient finalement **34891601** lignes.
+Pour sauvegarder les données transformées, on exécute la commande **dbt run**, qui va non seulement enregistrer ces données dans la table **output/transformed_data.db** de la base de données, mais aussi dans le fichier **output/trip_2024_transformed.parquet**. Ce fichier contient finalement **34891601** lignes, alors qu'il y avait **41169720** lignes avant la transformation des données.
 
 ---
 
