@@ -104,37 +104,37 @@ Ces tests sont déclaratifs, basés sur des règles standards ou personnalisées
 >Vérifie que la colonne ne contient aucune valeur NULL.
 >Exemple : tpep_pickup_datetime, tpep_dropoff_datetime, trip_duration_minutes, etc.
 
->**accepted_values**
+>**accepted_values:**
 >Vérifie que les valeurs d’une colonne sont dans une liste définie.
 >Exemple : payment_method doit être "Credit card" ou "Cash".
 >Exemple : store_and_fwd_flag doit être "N".
 
->**dbt_expectations.expect_column_values_to_be_between**
+>**dbt_expectations.expect_column_values_to_be_between:**
 >Vérifie que les valeurs numériques sont dans un intervalle donné.
 >Exemple : passenger_count doit être au moins 1.
 
->**dbt_expectations.expect_column_values_to_be_of_type**
+>**dbt_expectations.expect_column_values_to_be_of_type:**
 >Vérifie que les valeurs sont du type spécifié.
 >Exemple : passenger_count est de type BIGINT.
 
 
-**Tests définis dans des fichiers SQL**
+**Tests définis dans des fichiers SQL:**
 >Ces tests sont basés sur des requêtes personnalisées exécutées sur le modèle transform pour vérifier des contraintes métier ou détecter des anomalies.
 
->**Test de couverture des 12 mois**
+>**Test de couverture des 12 mois:**
 >Vérifie que les données contiennent bien des trajets pour les 12 mois de l’année 2024.
 >Fichier SQL
 >Logique : Extraction des mois distincts, puis échec si le nombre de mois ≠ 12.
 
->**Test sur passenger_count invalide**
+>**Test sur passenger_count invalide:**
 >Recherche les enregistrements où passenger_count est ≤ 0 ou non entier.
 >Fichier SQL
 
->**Test sur trip_distance invalide**
+>**Test sur trip_distance invalide:**
 >Recherche les trajets avec une distance ≤ 0.
 >Fichier SQL
 
->**Test sur trip_duration_minutes invalide**
+>**Test sur trip_duration_minutes invalide:**
 >Recherche les trajets avec une durée ≤ 0 minutes.
 >Fichier SQL
 
