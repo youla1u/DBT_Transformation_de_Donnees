@@ -75,7 +75,7 @@ Réaliser des requêtes exploratoires sur les données afin de procéder aux tra
 
 ## 4️⃣ Transformation des données dans dbt via SQL
 
-**Objectif :** créer des modèles SQL pour nettoyer, enrichir et préparer les données pour l’analyse finale.
+**Objectif :** créer des modèles SQL **(transform.sql dans models/taxi_trips)** pour nettoyer, enrichir et préparer les données pour l’analyse finale.
 
 **Étapes principales :**
  1. Chargement des données brutes depuis la source dbt "row_yellow_tripdata".
