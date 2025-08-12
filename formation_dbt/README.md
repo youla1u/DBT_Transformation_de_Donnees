@@ -175,7 +175,7 @@ dbt init formation_dbt
 ```
 >Pour les prochaines connexions, reactiver l'evironnement depuis le terminal et dans le dossier pratique-dbt.
 
-**Commande dbt**
+**Commandes dbt**
 ```bash
 # Nombre de lignes avant les transformations, affiché directement dans la console.
 dbt run-operation count_source_rows
@@ -190,14 +190,19 @@ dbt test
 dbt test --select test_distinct_months 
 
 ```
-**Pour explorer directement les donner dans DuckDB**
-> Taper **duckdb**, puis écrire une requête SQL d’exploration de données.
 
-**Pour explorer les donner dans DuckDB via un fichier_analyse.sql**
->Taper **duckdb**, puis exécuter **.read 'repertoire/fichier_analyse.sql**.
+**Commandes DuckDB**
+```bash
+# 1) Pour explorer directement les donner dans DuckDB
+duckdb  
+#Puis écrire une requête SQL d’exploration de données.
 
->Cette seconde méthode permet de sauvegarder les analyses à effectuer afin de les reprendre ultérieurement ou de les transmettre à un collègue.
+# 2) Pour explorer les donner dans DuckDB via un fichier_analyse.sql
+duckdb
+.read './analyses/analyse_exploratiore.sql'
+#Cette seconde méthode permet de sauvegarder les analyses à effectuer afin de les reprendre ultérieurement ou de les transmettre à un collègue.
 
->Exemple: **.read './analyses/analyse_exploratiore.sql'**
+# 3) Pour quitter DuckDB 
+.exitpour 
 
-**.exit** pour quitter DuckDB 
+```
