@@ -193,11 +193,11 @@ dbt test --select test_distinct_months
 
 **Commandes DuckDB**
 ```bash
-# 1) Pour explorer directement les donner dans DuckDB
+# 1) Pour explorer directement des données dans DuckDB
 duckdb  
 #Puis écrire une requête SQL d’exploration de données.
 
-# 2) Pour explorer les donner dans DuckDB via un fichier_analyse.sql
+# 2) Pour explorer des données dans DuckDB via un fichier_analyse.sql
 duckdb
 .read './analyses/analyse_exploratiore.sql'
 #Cette seconde méthode permet de sauvegarder les analyses à effectuer afin de les reprendre ultérieurement ou de les transmettre à un collègue.
