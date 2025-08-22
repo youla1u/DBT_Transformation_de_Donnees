@@ -1,7 +1,7 @@
 # 📊 DBT POUR LA TRANSFORMATION DE DONNÉES 
 
 Ce projet illustre un workflow de transformation de données avec **dbt** en utilisant **DuckDB** comme moteur SQL.
-
+ 
 ---
  
 ## 1️⃣ Présentation des données
