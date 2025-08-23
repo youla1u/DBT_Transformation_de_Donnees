@@ -3,7 +3,7 @@
 Ce projet illustre un workflow de transformation de données avec **dbt** en utilisant **DuckDB** comme moteur SQL.
  
 ---
- 
+  
 ## 1️⃣ Présentation des données
 
 J'utilise les données TLC de 2014 sur les courses de taxis jaunes, verts et VTC, disponibles à l’adresse : https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page.
